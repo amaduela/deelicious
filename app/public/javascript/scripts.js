@@ -129,7 +129,7 @@ head.ready(function() {
 				$('#top, .gallery-a li a').append('<div class="fit-a"></div>');
 				$('.gallery-a li a').append('<div class="fit-b"></div>');
 				$('#top > .fit-a').on('click',function(){ $(this).parent().toggleClass('active'); return false });	
-				if(!($.browser.msie && parseInt($.browser.version,10) < 9)){ if($('.image-a').size()){ $('.image-a img').wrap('<span class="img"></span>').imageMask('images/masks/a.png'); } }
+				if(!($.browser.msie && parseInt($.browser.version,10) < 9)){ if($('.image-a').size()){ $('.image-a img').wrap('<span class="img"></span>').imageMask('img/masks/a.png'); } }
 				$('.slider-a > .inner, .slider-b > .inner').each(function(){ $(this).bxSlider({ pager: true, controls: false, useCSS: false, adaptiveHeight: true }); });
 				$('#welcome').each( function(){ if($(this).find('article').size()>1){ $('#welcome > .inner').each(function(){ $(this).bxSlider({ pager: true, controls: false, useCSS: false, adaptiveHeight: true }); }); }});
 				$('#featured, #welcome article').each(function(){ $(this).css({'background-image':'url("'+$(this).find('img').attr('src')+'")'}); });
