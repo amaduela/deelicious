@@ -472,7 +472,7 @@ figure { margin: 32px 0; font-size: 1.1em; text-transform: uppercase; }
 		.image-a span.img:before { content: ""; display: block; position: absolute; left: -8px; top: -8px; z-index: 1; width: 234px; height: 234px; background: url(../img/sprite-a.png) 0 -646px no-repeat; }
 		.image-a img, .image-a canvas { display: -moz-inline-stack; display: inline-block; position: relative; z-index: 2; margin: 0; }
 	.image-a span { display: -moz-inline-stack; display: inline-block; position: relative; margin: 0 14px; padding: 4px 0 2px; border-top: 1px solid #fff; border-bottom: 1px solid #fff; }
-	.js .image-a span { top: -108px; }
+	.js .image-a span { /*top: -108px;*/ }
 .lt-ie9 { }
 	.lt-ie9.js .image-a span { top: 0; }
 	.lt-ie9 .image-a img, .lt-ie9 .image-a canvas { }
